@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOTCITO CON CLIPPATH</title>
+
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 400px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../img/fondo.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+.cabeza{
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/cabeza.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 140px;
+    top: 105px;
+    clip-path: inset(0 round 20px);
+}
+
+.ojoI{
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/ojoI.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 165px;
+    top: 140px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.ojoD{
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/ojoD.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 213px;
+    top: 140px;
+    clip-path: circle(50% at 50% 50%);
+}
+.boca{
+    width: 70px;
+    height: 35px;
+    background-image: url("../img/boca.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 165px;
+    top: 185px;
+    clip-path: polygon(33% 53%, 68% 53%, 100% 0, 100% 100%, 1% 100%, 0 0);
+}
+
+.antenita{
+    width: 10px;
+    height: 60px;
+    background-image: url("../img/antena.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 195px;
+    top: 45px;
+}
+
+.puntito{
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/puntito.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 190px;
+    top: 25px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.cuello{
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/cuello.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 225px;
+}
+
+.cuerpo{
+    width: 160px;
+    height: 180px;
+    background-image: url("../img/cuerpo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 120px;
+    top: 250px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.btncentro{
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/btncentro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 185px;
+    top: 320px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.brazoI{
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/brazitoI.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    position: absolute;
+    left: 50px;
+    top: 280px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.brazoD{
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/brazitoD.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 260px;
+    top: 280px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.piernaI{
+    width: 90px;
+    height: 120px;
+    background-image: url("../img/piernaI.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 120px;
+    top: 430px;
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+.piernaD{
+    width: 90px;
+    height: 120px;
+    background-image: url("../img/piernaD.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 190px;
+    top: 430px;
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+.pieI{
+    width: 70px;
+    height: 40px;
+    background-image: url("../img/pieI.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 114px;
+    top: 525px;
+    clip-path: inset(55% 26% 0 14%);
+}
+
+.pieD{
+    width: 70px;
+    height: 40px;
+    background-image: url("../img/pieD.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 225px;
+    top: 525px;
+    clip-path: inset(55% 26% 0 14%);
+}
+
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="antenita"></div>
+    <div class="puntito"></div>
+    <div class="cabeza"></div>
+    <div class="cuello"></div>
+    <div class="ojoI"></div>
+    <div class="ojoD"></div>
+    <div class="boca"></div>
+    <div class="cuerpo"></div>
+    <div class="btncentro"></div>
+    <div class="brazoI"></div>
+    <div class="brazoD"></div>
+    <div class="piernaI"></div>
+    <div class="piernaD"></div>
+    <div class="pieI"></div>
+    <div class="pieD"></div>
+
+</div>
+</body>
+</html>
