@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIP PATH CSS</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .contenedor{
+            width: 400px;
+            height: 700px;
+            background-image: url("img/FONDITO.avif");
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+        .volver{
+            position: fixed;
+            top: 5px;
+            left: 20px; 
+            width: 140px;   
+            height: 40px;   
+            background: linear-gradient(45deg, #2563eb, #38bdf8);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px; 
+            font-size: 16px;   
+            font-family: Arial;
+            border-radius: 12px;
+            transition: 0.4s;
+            box-shadow: 0px 8px 15px rgba(0,0,0,0.4);
+            z-index: 10;
+        }
+
+        .volver:hover{
+            background: linear-gradient(45deg, #1d4ed8, #0ea5e9);
+            transform: scale(1.1);
+            box-shadow: 0px 12px 20px rgba(0,0,0,0.6);
+        }
+        .gorrito{
+            width: 100px;   
+            height: 132px;
+            background-image: url("img/GORRITO.png");
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            position: absolute;
+            left: 150px;
+            top: 100px; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+         .cabeza{
+            width: 100px;   
+            height: 100px;
+            background-color: transparent;
+            z-index: 1;
+            clip-path: circle(50% at 50% 50%);
+            background-image: url("img/rostro.png");
+            position: absolute;
+            left: 150px;
+            top: 190px; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+         .cuerpo{
+            width: 120px;   
+            height: 250px;
+            background-color:transparent;
+            background-image: url("img/cuerpo.jpg");
+            z-index: 1;
+            clip-path: polygon(45% 0, 59% 0, 85% 100%, 16% 99%);
+            position: absolute;
+            left: 140px;
+            top: 280px; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+         .brazoI{
+            width: 120px;   
+            height: 80px;
+            background-color:transparent;
+            background-image: url("img/brazitoI.webp");
+            clip-path: polygon(0 48%, 40% 18%, 100% 16%, 100% 85%, 36% 85%);
+            position: absolute;
+            left: 70px;
+            top: 320px; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .brazoD{
+            width: 120px;   
+            height: 80px;
+            background-color:transparent;
+            background-image: url("img/brazitoD.webp");
+            clip-path: polygon(0 48%, 40% 18%, 100% 16%, 100% 85%, 36% 85%);
+            position: absolute;
+            left: 210px;
+            top: 320px; 
+            transform: scaleX(-1);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+         .pieI{
+            width: 120px;   
+            height: 80px;
+            background-color:transparent;
+            background-image: url("img/ZAPATOI.jpg");
+            clip-path: ellipse(35% 21% at 50% 50%);
+            position: absolute;
+            left: 110px;
+            top: 500px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+         .pieD{
+            width: 120px;   
+            height: 80px;
+            background-color:transparent;
+            background-image: url("img/ZAPATOD.jpg");
+            clip-path: ellipse(35% 21% at 50% 50%);
+            position: absolute;
+            left: 180px;
+            top: 500px; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: scaleX(-1);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class ="contenedor">
+        <div class ="gorrito"></div>
+        <div class ="cabeza"></div>
+        <div class ="cuerpo"></div>
+        <div class ="brazoD"></div>
+        <div class ="brazoI"></div>
+        <div class ="pieD"></div>
+        <div class ="pieI"></div>
+    </div>
+    <a href="index.html" class="volver"> VOLVER</a>
+    
+    
+</body>
+</html>
