@@ -324,6 +324,24 @@
         }
 
         }
+        .gym{
+
+        width: 180px;
+        height: 180px;
+        object-fit: contain;
+        animation: gymMover 2s infinite alternate ease-in-out;
+        filter: drop-shadow(0 0 15px #f97316);
+        }
+        @keyframes gymMover{
+
+        from {
+
+        transform: scale(1) translateY(0px);
+        }
+        to{
+        transform: scale(1.08) translateY(-15px);
+        }
+        }
         footer{
             text-align: center;
             padding: 25px;
@@ -425,6 +443,14 @@
             <h2>PROYECTO 9</h2>
             <p>Robotcito con Clippath</p>
             <a href="ANIMACION9.html" class="boton">CLICK AQUI</a>
+        </div>
+        <div class="tarjeta">
+            <div class="preview">
+                <img src="img/gimnasio.png" class="gym">
+            </div>
+            <h2>PROYECTO 10</h2>
+            <p>Efecto parallax</p>
+            <a href="ANIMACION10.html" class="boton">CLICK AQUI</a>
         </div>
 
     </section>
