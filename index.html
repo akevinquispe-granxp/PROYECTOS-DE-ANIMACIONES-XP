@@ -330,7 +330,6 @@
         height: 180px;
         object-fit: contain;
         animation: gymMover 2s infinite alternate ease-in-out;
-        
         }
         @keyframes gymMover{
 
@@ -355,6 +354,35 @@
                 font-size: 35px;
             }
         }
+        .kevin{
+        width: 430px;
+        height: 460px;
+        object-fit: contain;
+        animation: kevinGlow 3s infinite alternate ease-in-out;
+        filter:
+        drop-shadow(0 0 10px #38bdf8);
+        }
+
+        @keyframes kevinGlow{
+
+        from {
+
+        transform:
+        scale(1)
+        translateY(0px);
+        filter:
+        drop-shadow(0 0 10px #38bdf8);
+    }
+
+        to {
+        transform:
+        scale(1.1)
+        translateY(-10px);
+        filter:
+        drop-shadow(0 0 25px #38bdf8);
+    }
+}
+
     </style>
 </head>
 <body>
@@ -451,6 +479,14 @@
             <h2>PROYECTO 10</h2>
             <p>Efecto parallax</p>
             <a href="ANIMACION10.html" class="boton">CLICK AQUI</a>
+        </div>
+             <div class="tarjeta">
+            <div class="preview">
+                <img src="img/nombre.png" class="kevin">
+            </div>
+            <h2>PROYECTO 11</h2>
+            <p>Efecto parallax + Nombre</p>
+            <a href="ANIMACION11.html" class="boton">CLICK AQUI</a>
         </div>
 
     </section>
