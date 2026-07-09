@@ -382,6 +382,28 @@
         drop-shadow(0 0 25px #38bdf8);
     }
 }
+.blender{
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    animation: girarBlender 4s infinite ease-in-out;
+}
+
+@keyframes girarBlender{
+
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+
+    50%{
+        transform: rotate(15deg) scale(1.08);
+    }
+
+    100%{
+        transform: rotate(-15deg) scale(1);
+    }
+
+}
 
     </style>
 </head>
@@ -488,6 +510,16 @@
             <p>Efecto parallax + Nombre</p>
             <a href="ANIMACION11.html" class="boton">CLICK AQUI</a>
         </div>
+            <div class="tarjeta">
+         <div class="preview">
+         <img src="img/logo_blender.png" class="blender">
+       </div>
+        <h2>PROYECTO 12</h2>
+         <p>Mi 1° Animación con blender </p>
+         <a href="ANIMACION12.html" class="boton">
+          Ver Proyecto
+         </a>
+           </div>
 
     </section>
 
